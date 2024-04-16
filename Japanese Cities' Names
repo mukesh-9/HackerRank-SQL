@@ -14,6 +14,6 @@ POPULATION - NUMBER
 
 Solution:-
 ****************
-Explain: We need to select the NAME column from the table (Given in question). And as well we check the COUNTRYCODE should be JPN. JPN is the countrycode for Japanese city that given in question.
+Explain: We need to select the NAME column from the table CITY (Given in question). And as well we check the COUNTRYCODE should be JPN. JPN is the countrycode for Japanese city that given in question.
 So the query will be-
 SELECT NAME FROM CITY WHERE COUNTRYCODE = 'JPN';
