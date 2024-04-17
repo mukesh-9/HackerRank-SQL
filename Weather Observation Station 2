@@ -17,6 +17,6 @@ Where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 Solution:-
 ****************
-Explain:- We need to select the SUM of all values of LAT_N and the SUM of all values of LONG_W with 2 decimal places. So, first we get SUM by using "SUM(LAT_N)" and then we get ROUND by using "ROUND(SUM(LAT_N), 2)" of the SUM with 2 decimal places.
-So the query will be-
 SELECT ROUND(SUM(LAT_N), 2) AS lat, ROUND(SUM(LONG_W), 2) AS lon FROM STATION;
+
+Explain:- We need to select the SUM of all values of LAT_N and the SUM of all values of LONG_W with 2 decimal places. So, first we get SUM by using "SUM(LAT_N)" and then we get ROUND by using "ROUND(SUM(LAT_N), 2)" of the SUM with 2 decimal places.
