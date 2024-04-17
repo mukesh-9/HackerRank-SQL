@@ -15,7 +15,7 @@ Where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 Solution:-
 ****************
-Explain: We need to select the CITY column from the table STATION (Given in question). And we'll check the ID should be a even number. 
-So for this we use MOD() function that returns the remainder of a number divided by another number. If remainder is 0 then the ID is even else ID is odd
-So the query will be-
 SELECT DISTINCT CITY FROM STATION WHERE MOD(ID, 2) = 0;
+
+Explain:- We need to select the CITY column from the table STATION (Given in question). And we'll check the ID should be a even number. 
+So for this we use MOD() function that returns the remainder of a number divided by another number. For even or odd number we will divided the ID by 2. So, If remainder is 0 then the ID number is even else ID number will be odd.
