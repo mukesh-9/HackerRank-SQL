@@ -14,6 +14,6 @@ POPULATION - NUMBER
 
 Solution:-
 ****************
-Explain: We need to select all columns from the table CITY (Given in question). So we use Asterisk(*) that means all columns of the table.
-So the query will be-
 SELECT * FROM CITY;
+
+Explain:- We need to select all columns from the table CITY (Given in question). So we use Asterisk(*) that means all columns of the table.
