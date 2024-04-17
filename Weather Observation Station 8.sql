@@ -17,20 +17,10 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 Solution:-
 ****************
-Query1: SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP '^[aeiouAEIOU]' AND CITY REGEXP '[aeiouAEIOU]$';
+SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP '^[aeiouAEIOU]' AND CITY REGEXP '[aeiouAEIOU]$';
 
-Query2: SELECT DISTINCT CITY FROM STATION WHERE 
-        CITY LIKE '%a' 
-        OR CITY LIKE '%e' 
-        OR CITY LIKE '%i' 
-        OR CITY LIKE '%o' 
-        OR CITY LIKE '%u' 
-        OR CITY LIKE '%A' 
-        OR CITY LIKE '%E' 
-        OR CITY LIKE '%E' 
-        OR CITY LIKE '%O' 
-        OR CITY LIKE '%U';
-
-Explain:- Everything will be same as "Weather Observation Station 6". But here we only need to reverse that. 
-In query1, for starting we used ^ symbol, but for ending we'll use $ symbol at the end of Regular Expression.
-In query2, for starting we started the city name with vowel character and the remaining characters are denoted by '%' symbol, but for ending we'll end the city name with vowel character, and the starting characters will be denoted by same '%' symbol
+Explain:- This is also same as "Weather Observation Station 6" and "Weather Observation Station 7". But here, we'll use both Regular Expression, 
+        Regulare Expression1: '^[aeiouAEIOU],
+        Regulare Expression2: '[aeiouAEIOU]$'
+        Expression1 will use to check starting character of city name and Expression2 will use to check last character of the city name. Here we'll also use 'AND' oprator to check both starting and last character should be a vowel.
+        
