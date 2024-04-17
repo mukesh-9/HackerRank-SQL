@@ -33,4 +33,4 @@ Query2: SELECT DISTINCT CITY FROM STATION WHERE
 Explain:- We can do this by two query, one by REGEXP(Regular Expression) and second by 'LIKE' operator. 
 In query1, In the Regular Expression ('^[aeiouAEIOU]'), ^ symbol denotes the start of a string (city name) and it checks the given characters (aeiouAEIOU) are at the starting of the city name.
 In query2, we use 'LIKE' operator and we set the first character from the vowels (a,e,i,o,u) with both lowercase and uppercase. And the '%' symbol denotes any remaining charcters of the city name.
-Here we also use 'OR' operator to check that any vowel is present at the starting of city name.
+Here we also use 'OR' operator to check that any vowel is present at the starting of city name. To remove duplicate city name, we'll use 'DISTINCT' keyword.
