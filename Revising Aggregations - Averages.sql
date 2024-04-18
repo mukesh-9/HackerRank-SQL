@@ -16,4 +16,4 @@ Solution:-
 ****************
 SELECT AVG(POPULATION) FROM CITY WHERE DISTRICT='California';
 
-Explain:- We need to get the avaerage population of all cities those district is 'California'.
+Explain:- We need to get the average population of all cities those district is 'California'.
