@@ -14,6 +14,6 @@ The CITY table is described as follows:
 
 Solution:-
 ****************
-SELECT ROUND(AVG(POPULATION)) FROM CITY;
+SELECT FLOOR(AVG(POPULATION)) FROM CITY;
 
-Explain:- We need to get the average population of all cities and then ROUND the average population.
+Explain:- We need to get the average population of all cities and then to get the nearest integer we'll use the FLOOR() function for the average population.
